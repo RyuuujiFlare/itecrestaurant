@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flambe FoodHub Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <style>
+        
+            body {
+                background-image: url("https://u-static.fotor.com/images/text-to-image/result/PRO-9bae5b68325e4fef863345ffedc52db7.jpg");
+                font-family: Arial, sans-serif;
+                background-color: #f8f9fa;
+                padding-top: 50px;
+            }
+        
+            table {
+                background-color: #fff; 
+                width: 100%; 
+                border-collapse: collapse;
+            }
+        
+            th,
+            td {
+                color: rgb(14, 0, 0);
+                padding: 15px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                font-size: 16px; 
+            }
+        
+            th {
+                background-color: #343a40;
+                color: white;
+            }
+        
+            .available {
+                color: green;
+            }
+        
+            .unavailable {
+                color: red;
+            }
+
+            .available-status {
+                background-color: #8BC34A;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+            .unavailable-status {
+                background-color: #FF5722;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        
+            @media (max-width: 768px) {
+                /* Adjustments for tablets and mobile devices */
+                body {
+                    padding-top: 0;
+                }
+            }
+        </style>
+        
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5" style="color: #f8f9fa; font-family: 'Bebas Neue', cursive;">Flambe FoodHub pub</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                    <th>tables</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+                <tr>
+                    <td>Pad Thai</td>
+                    <td>Stir-fried rice noodles with eggs, tofu, peanuts, bean sprouts, and your choice of protein.
+                    </td>
+                    <td>$12.99</td>
+                    <td class="available">Available</td>
+                    <td>table 1</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Sushi Platter</td>
+                    <td>Assortment of fresh nigiri and maki sushi.</td>
+                    <td>$18.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 2</td>
+                    <td class="unavailable">Unavailable</td>
+                </tr>
+                <tr>
+                    <td>Beef Bulgogi</td>
+                    <td>Marinated thinly sliced beef grilled to perfection, served with rice and kimchi.</td>
+                    <td>$15.99</td>
+                    <td class="available">Available</td>
+                    <td>table 3</td>
+                    <td class="unavailable">Unavailable</td>
+                </tr>
+                <tr>
+                    <td>Chicken Teriyaki</td>
+                    <td>Grilled chicken glazed with teriyaki sauce, served with steamed vegetables and rice.</td>
+                    <td>$14.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 4</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Stir Fry</td>
+                    <td>Mixed vegetables stir-fried with your choice of sauce (teriyaki, soy-ginger, or garlic), served with rice or noodles.</td>
+                    <td>$11.99</td>
+                    <td class="available">Available</td>
+                    <td>table 5</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Salmon Sashimi</td>
+                    <td>Fresh slices of raw salmon served with wasabi and soy sauce.</td>
+                    <td>$20.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 6</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Shrimp Tempura</td>
+                    <td>Crispy fried shrimp served with tempura sauce and steamed rice.</td>
+                    <td>$16.99</td>
+                    <td class="available">Available</td>
+                    <td>table 7</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Miso Soup</td>
+                    <td>Traditional Japanese soup made with miso paste, tofu, seaweed, and green onions.</td>
+                    <td>$4.99</td>
+                    <td class="available">Available</td>
+                    <td>table 8</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Pho</td>
+                    <td>Vietnamese noodle soup with beef or chicken, served with fresh herbs, bean sprouts, lime, and chili peppers.</td>
+                    <td>$13.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 9</td>
+                    <td class="unavailable">Unavailable</td>
+                </tr>
+                <tr>
+                    <td>California Roll</td>
+                    <td>Roll made with crab meat, avocado, and cucumber, topped with sesame seeds.</td>
+                    <td>$9.99</td>
+                    <td class="available">Available</td>
+                    <td>table 10</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Chicken Katsu</td>
+                    <td>Breaded and deep-fried chicken cutlet served with tonkatsu sauce, shredded cabbage, and steamed rice.</td>
+                    <td>$12.99</td>
+                    <td class="available">Available</td>
+                    <td>table 11</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Tempura</td>
+                    <td>Assorted vegetables lightly battered and fried, served with tempura sauce.</td>
+                    <td>$10.99</td>
+                    <td class="available">Available</td>
+                    <td>table 12</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Pad See Ew</td>
+                    <td>Stir-fried wide rice noodles with broccoli, egg, and your choice of meat in a sweet soy sauce.</td>
+                    <td>$13.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 13</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Dragon Roll</td>
+                    <td>Roll filled with shrimp tempura, cucumber, and avocado, topped with eel and avocado slices.</td>
+                    <td>$17.99</td>
+                    <td class="available">Available</td>
+                    <td>table 14</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Beef Pho</td>
+                    <td>Vietnamese noodle soup with thinly sliced beef, served with fresh herbs, bean sprouts, lime, and chili peppers.</td>
+                    <td>$14.99</td>
+                    <td class="available">Available</td>
+                    <td>table 15</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Tuna Sushi</td>
+                    <td>Fresh tuna slices served on beds of seasoned rice.</td>
+                    <td>$22.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 16</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Avocado Roll</td>
+                    <td>Roll filled with ripe avocado pieces and sesame seeds.</td>
+                    <td>$8.99</td>
+                    <td class="available">Available</td>
+                    <td>table 17</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Kimchi Fried Rice</td>
+                    <td>Fried rice cooked with kimchi, vegetables, and your choice of meat.</td>
+                    <td>$11.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 18</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Vegetarian Sushi Roll</td>
+                    <td>Assorted vegetables wrapped in rice and seaweed, served with soy sauce and wasabi.</td>
+                    <td>$10.99</td>
+                    <td class="available">Available</td>
+                    <td>table 19</td>
+                    <td class="available">Available</td>
+                </tr>
+                <tr>
+                    <td>Seafood Udon</td>
+                    <td>Japanese thick wheat noodles in a savory broth with assorted seafood.</td>
+                    <td>$16.99</td>
+                    <td class="unavailable">Unavailable</td>
+                    <td>table 20</td>
+                    <td class="available">Available</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+<div class="mt-5">
+    <h2 class="text-center mb-3" style="color: white;">Menu</h2>
+            
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>Pad Thai</td>
+                <td>Stir-fried rice noodles with eggs, tofu, peanuts, bean sprouts, and your choice of protein.</td>
+                <td>$12.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Sushi Platter</td>
+                <td>Assortment of fresh nigiri and maki sushi.</td>
+                <td>$18.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>Beef Bulgogi</td>
+                <td>Marinated thinly sliced beef grilled to perfection, served with rice and kimchi.</td>
+                <td>$15.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Chicken Teriyaki</td>
+                <td>Grilled chicken glazed with teriyaki sauce, served with steamed vegetables and rice.</td>
+                <td>$14.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>Vegetable Stir Fry</td>
+                <td>Mixed vegetables stir-fried with your choice of sauce (teriyaki, soy-ginger, or garlic), served with rice or noodles.</td>
+                <td>$11.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Salmon Sashimi</td>
+                <td>Fresh slices of raw salmon served with wasabi and soy sauce.</td>
+                <td>$20.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>Shrimp Tempura</td>
+                <td>Crispy fried shrimp served with tempura sauce and steamed rice.</td>
+                <td>$16.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Miso Soup</td>
+                <td>Traditional Japanese soup made with miso paste, tofu, seaweed, and green onions.</td>
+                <td>$4.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Pho</td>
+                <td>Vietnamese noodle soup with beef or chicken, served with fresh herbs, bean sprouts, lime, and chili peppers.</td>
+                <td>$13.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>California Roll</td>
+                <td>Roll made with crab meat, avocado, and cucumber, topped with sesame seeds.</td>
+                <td>$9.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Chicken Katsu</td>
+                <td>Breaded and deep-fried chicken cutlet served with tonkatsu sauce, shredded cabbage, and steamed rice.</td>
+                <td>$12.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Vegetable Tempura</td>
+                <td>Assorted vegetables lightly battered and fried, served with tempura sauce.</td>
+                <td>$10.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Pad See Ew</td>
+                <td>Stir-fried wide rice noodles with broccoli, egg, and your choice of meat in a sweet soy sauce.</td>
+                <td>$13.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>Dragon Roll</td>
+                <td>Roll filled with shrimp tempura, cucumber, and avocado, topped with eel and avocado slices.</td>
+                <td>$17.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Beef Pho</td>
+                <td>Vietnamese noodle soup with thinly sliced beef, served with fresh herbs, bean sprouts, lime, and chili peppers.</td>
+                <td>$14.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Tuna Sushi</td>
+                <td>Fresh tuna slices served on beds of seasoned rice.</td>
+                <td>$22.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>Avocado Roll</td>
+                <td>Roll filled with ripe avocado pieces and sesame seeds.</td>
+                <td>$8.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Kimchi Fried Rice</td>
+                <td>Fried rice cooked with kimchi, vegetables, and your choice of meat.</td>
+                <td>$11.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+            <tr>
+                <td>Vegetarian Sushi Roll</td>
+                <td>Assorted vegetables wrapped in rice and seaweed, served with soy sauce and wasabi.</td>
+                <td>$10.99</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td>Seafood Udon</td>
+                <td>Japanese thick wheat noodles in a savory broth with assorted seafood.</td>
+                <td>$16.99</td>
+                <td class="unavailable">Unavailable</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        </div>
+
+    <!-- Bootstrap JS (Optional, if you want to use Bootstrap's JS features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjw8f+3p3HA1qWjWHv5BjzVWdx4+flJwB4oY4LXXs1kUt6Oo4q5QF5KsXNhFtkn" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
